@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".PublisherActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcDevice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="type message"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btAdvertiser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Advertiser"
+        android:textAllCaps="false" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btSendPayload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Send Payload"
+        android:textAllCaps="false" />
+
+</LinearLayout>
